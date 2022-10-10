@@ -38,7 +38,7 @@ html{
     background-color: #fff;
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 h1,
@@ -224,7 +224,7 @@ button{
     height: 100%;
     left: 0px;
     top: 0px;
-    background: rgba(47, 48, 58, 0.4);
+    background:rgba(47, 48, 58, 0.4);
     overflow:auto;
     transform: translate Y (100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
@@ -497,8 +497,8 @@ button{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 /*--TEAM--*/
@@ -587,11 +587,11 @@ button{
 
 /*--CLIENTS--*/
 
-.customers-logo{
+.customers-logo {
     fill: currentColor;
 }
 
-.customers-card{
+.customers-card {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -599,16 +599,16 @@ button{
 }
 
 .customers-card:hover,
-.customers-card:focus{
+.customers-card:focus {
     border-color: var(--accent-color);
 }
 
-.customers-list{
+.customers-list {
     display: flex;
     column-gap: 30px;
 }
 
-.customers-link{
+.customers-link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -619,7 +619,7 @@ button{
 }
   
 .customers-link:hover,
-.customers-link:focus{    
+.customers-link:focus {    
     color: var(--accent-color); 
 }
 
@@ -631,7 +631,7 @@ button{
     
 }
 
-.footer-social-title{
+.footer-social-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -640,7 +640,7 @@ button{
     margin-bottom: 20px;
 }
 
-.footer-social-list-link{
+.footer-social-list-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -652,24 +652,24 @@ button{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.footer{
+.footer {
     background-color: #2F303A;
     padding: 60px 0;
 }
 
-.footer .container{
+.footer .container {
     display: flex;
     gap: 70px;
     align-items: baseline;
 }
 
-.footer .logo{
+.footer .logo {
     margin-right: 0;
     display: block;
     margin-bottom: 20px;
 }
 
-.footer-list{
+.footer-list {
     list-style: none;
     margin-right: 0;
     margin-bottom: 0;
@@ -680,39 +680,40 @@ button{
 
 .adress,
 .email,
-.phone{
+.phone {
     font-style: normal;
     margin-bottom: 9px;
  }
 
-.adress-link{
+.adress-link {
     color: var(--primary-text-color-theme-dark);
     margin-right: 0;
     margin-bottom: 9px;
 }
 
-.footer-contact{
+.footer-contact {
     margin-bottom: 9px;
     color: var(--secondary-text-color-theme-dark);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }   
 
 .footer-contact:hover,
-.footer-contact:focus{
+.footer-contact:focus {
     color: var(--accent-color);
 }
 
-.footer-social-list{
+.footer-social-list {
     gap: 10px;
 }
 
-.backdrop{
-    position: absolute;
+.backdrop {
+    position: fixed;
+    z-index: 100;
     width: 1600px;
     height: 1024px;
     top: 24px;
     left: 0;
-    background: #FFFFFF;
+    background: #FFFFFF, rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
@@ -721,13 +722,13 @@ button{
     transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
 
-.modal{
+.modal {
     position: absolute; 
     width: 528px;
     height: 581px;
@@ -740,7 +741,7 @@ button{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn{
+.modal-close-btn {
     position: absolute;
     top: 3px;
     right: 4px;
@@ -749,8 +750,10 @@ button{
     justify-content: center;
     width: 18px;
     height: 18px;
-    border-radius: 50%;
     background: #FFFFFF;
+    border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
 }
+
+
